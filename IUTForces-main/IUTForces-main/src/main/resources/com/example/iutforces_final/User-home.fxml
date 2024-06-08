@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="738.0" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iutforces_final.UserHomeController">
+   <children>
+      <AnchorPane id="topbar" layoutX="-2.0" prefHeight="40.0" prefWidth="744.0" stylesheets="@../../../style.css">
+         <children>
+            <Group id="topbar" layoutY="3.0">
+               <children>
+                  <Button id="clicked" fx:id="us_home" layoutX="19.0" layoutY="1.0" mnemonicParsing="false" onAction="#to_us_home" text="HOME">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="us_probs" layoutX="77.0" layoutY="1.0" mnemonicParsing="false" onAction="#to_us_probs" text="PROBLEMSET">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="us_status" layoutX="182.0" layoutY="2.0" mnemonicParsing="false" onAction="#to_us_status" text="STATUS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="us_submission" layoutX="251.0" layoutY="2.0" mnemonicParsing="false" onAction="#to_us_submission" prefHeight="28.0" prefWidth="100.0" text="SUBMISSION">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="us_stand" layoutX="359.0" layoutY="1.0" mnemonicParsing="false" onAction="#to_us_stand" text="STANDINGS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="us_clar" layoutX="527.0" layoutY="2.0" mnemonicParsing="false" onAction="#to_us_clar" text="CLARIFICATION">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="us_tut" layoutX="653.0" layoutY="1.0" mnemonicParsing="false" onAction="#to_us_tut" text="TUTORIAL">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="us_submit" layoutX="450.0" layoutY="2.0" mnemonicParsing="false" onAction="#to_us_submit" prefHeight="28.0" prefWidth="71.0" text="SUBMIT">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+      <Label fx:id="cuid" layoutX="330.0" layoutY="207.0" prefHeight="43.0" prefWidth="206.0" text="" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="suid" layoutX="326.0" layoutY="254.0" prefHeight="43.0" prefWidth="227.0" text="" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="tuname" layoutX="326.0" layoutY="302.0" prefHeight="43.0" prefWidth="441.0" text="" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="logout" layoutX="363.0" layoutY="446.0" mnemonicParsing="false" onAction="#loggingout" text="Log Out" />
+      <Label layoutX="133.0" layoutY="209.0" text="Course Code :" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="133.0" layoutY="260.0" text="Session:" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="133.0" layoutY="309.0" text="Instructor:" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="25.0" />
+         </font>
+      </Label>
+      <Line endX="454.60003662109375" layoutX="211.0" layoutY="185.0" startX="-100.0" stroke="#f4f1f1" strokeWidth="3.0" />
+      <Line endX="454.60003662109375" layoutX="213.0" layoutY="365.0" startX="-100.0" stroke="#f4f1f1" strokeWidth="3.0" />
+   </children>
+</AnchorPane>

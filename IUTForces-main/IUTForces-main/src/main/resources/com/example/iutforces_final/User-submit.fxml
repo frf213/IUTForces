@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="738.0" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iutforces_final.UserSubmitController">
+   <children>
+      <AnchorPane id="topbar" layoutX="-2.0" prefHeight="40.0" prefWidth="744.0" stylesheets="@../../../style.css">
+         <children>
+            <Group id="topbar" layoutY="3.0">
+               <children>
+                  <Button fx:id="us_home" layoutX="19.0" layoutY="1.0" mnemonicParsing="false" onAction="#to_us_home" text="HOME">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="us_probs" layoutX="77.0" layoutY="1.0" mnemonicParsing="false" onAction="#to_us_probs" text="PROBLEMSET">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="us_status" layoutX="182.0" layoutY="2.0" mnemonicParsing="false" onAction="#to_us_status" text="STATUS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="us_submission" layoutX="251.0" layoutY="2.0" mnemonicParsing="false" onAction="#to_us_submission" prefHeight="28.0" prefWidth="100.0" text="SUBMISSION">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="us_stand" layoutX="359.0" layoutY="1.0" mnemonicParsing="false" onAction="#to_us_stand" text="STANDINGS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="us_clar" layoutX="527.0" layoutY="2.0" mnemonicParsing="false" onAction="#to_us_clar" text="CLARIFICATION">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="us_tut" layoutX="653.0" layoutY="1.0" mnemonicParsing="false" onAction="#to_us_tut" text="TUTORIAL">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+                  <Button id="clicked" fx:id="us_submit" layoutX="450.0" layoutY="2.0" mnemonicParsing="false" onAction="#to_us_submit" prefHeight="28.0" prefWidth="71.0" text="SUBMIT">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+      <Label layoutX="134.0" layoutY="134.0" text="Problem ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="problemID" layoutX="231.0" layoutY="126.0" prefHeight="27.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="languageChoiceBox" layoutX="231.0" layoutY="171.0" prefWidth="150.0" />
+      <Label layoutX="134.0" layoutY="176.0" text="Language" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="codeEditor" layoutX="131.0" layoutY="216.0" prefHeight="247.0" prefWidth="470.0">
+         <font>
+            <Font name="Courier New" size="12.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="submitcode" layoutX="340.0" layoutY="476.0" mnemonicParsing="false" onAction="#setSubmitcode" text="SUBMIT" />
+      <Label fx:id="verdictLabel" alignment="CENTER" layoutX="144.0" layoutY="516.0" prefHeight="39.0" prefWidth="508.0" textFill="#fcfcfc">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
